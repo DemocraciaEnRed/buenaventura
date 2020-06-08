@@ -54,7 +54,7 @@ export default class Carrusel extends Component {
   componentDidUpdate () {
     if (this.flkty) this.flkty.destroy()
     const options = {
-      cellAlign: 'left',
+      cellAlign: 'center',
       draggable: false,
       // friction: 0.2,
       contain: true,
