@@ -51,6 +51,12 @@ main.container
               input(type='text', name='cover', placeholder= t('admin-topics-form.placeholder.cover'), validate='url')
 
           fieldset
+            label= t('forum.form.icon')
+            .form-group.clearfix.summary
+              input(type='text', name='icon', placeholder= t('admin-topics-form.placeholder.cover'), validate='url')
+            p(style="margin:5px 0 0; font-size: 0.8rem;color:#606060")=t('admin-topics-form.description.iconUrl')
+
+          fieldset
             label= 'Fecha de cierre'
             .form-group.clearfix.summary
               input(type='date', name='closingAt', maxlength=12, validate='max-length:12')
