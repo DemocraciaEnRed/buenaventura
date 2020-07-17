@@ -2,6 +2,7 @@ version: '3'
 
 services:
   app:
+    container_name: buenaventura-app
     build:
       context: .
       dockerfile: ./docker/development.Dockerfile
@@ -15,11 +16,13 @@ services:
       - ./bin:/usr/src/bin
       - ./config:/usr/src/config
       - ./lib:/usr/src/lib
+      - ./ext:/usr/src/ext
       - ./migrations:/usr/src/migrations
       - ./test:/usr/src/test
     depends_on:
       - mongo
     tty: true
+    # network_mode: 'host'
 
   mongo:
     image: mongo:3.2
