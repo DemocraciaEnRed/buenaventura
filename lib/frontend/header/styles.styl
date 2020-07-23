@@ -133,6 +133,8 @@
       background-image: linear-gradient(to right, #ffab5e 0%, #ffe900)
       text-transform: uppercase
       margin-right: 0
+    &:focus
+      outline: none
 
   .logo
     margin: 15px 0 0 0
@@ -161,6 +163,8 @@
     border: none
     width: 232px
     background-color: $main-color
+    border-radius: 20px;
+    overflow: hidden;
 
     a
       font-size: 16px
@@ -168,7 +172,7 @@
       text-transform: uppercase
 
       &:hover
-        background-color: $main-color-resalted
+        background-color: $main-link-color
 
 nav.navbar
   height: 72px
