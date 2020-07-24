@@ -20,16 +20,24 @@
     color: white
     line-height: 1.2
     margin-top: 10px
-
+.comunidades-carousel
+  padding: 0 20px;
+.comunidad-col 
+  display: flex
+  justify-content: center
 .comunidad-carousel-item
   text-align: center
   cursor: pointer
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h4
     font-family 'Dosis', sans-serif
     text-transform: uppercase
     line-height: 1.2;
     font-size: 25px
     text-align: center
+    flex: 1 0 auto;
   .icon-wrapper
     width: 140px;
     height: 140px;
@@ -43,3 +51,6 @@
   &.selected
       .icon-wrapper
         border: solid 4px #707070;
+.flickity-resize
+  .comunidad-col
+    height: calc(100% - 40px)
