@@ -1,9 +1,9 @@
 .ext-footer
-  padding 60px 0
+  padding 40px 0
   margin-top 30px
   font-size 1em
-  background-color #fff
   border-top: 1px solid rgba(0, 0, 0, 0.1)
+  background-image: linear-gradient(to right, #129959 2%, #129959 5%, #11955d 19%, #0f8c6c 35%, #0c7d84 53%, #0867a5 71%, #034ccf 90%, #003ce9)
 
   .footer
     max-width 1180px
@@ -20,10 +20,13 @@
     p
       max-width 560px
   a
-    color $main-link-color
+    color $secondary-color
+    font-family 'Dosis', sans-serif
+    text-transform uppercase
     font-weight 400
+    font-size 18px
     &:hover
-      color $main-link-color-hover
+      color $secondary-color
       text-decoration underline
 
   .logo
@@ -48,9 +51,24 @@
     &:first-of-type
       flex-grow 3
 
+    &.menu-right
+      text-align right
+
     a
       display block
-      padding 6px 0
+      padding 10px 0
+
+  .copyright
+    color white
+    font-size 14px
+    width 100%
+    margin-top 20px
+    padding 0
+    margin-bottom 0
+    a
+      font-family: 'Raleway', sans-serif
+      text-transform: none
+      font-size: 14px
 
   @media only screen and (max-width: 687px)
     .footer
@@ -70,3 +88,14 @@
 
     .institutional
       padding 0 15px
+
+  @media (max-width: 544px)
+    .institutional
+      order 1
+    .first-menu
+      order 2
+    .second-menu
+      order 3
+      .menu-right
+        text-align left
+  

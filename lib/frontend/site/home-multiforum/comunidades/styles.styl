@@ -1,18 +1,56 @@
-#comunidades
-  .block-button
-    width: 100%;
-    padding: 40px;
-    border: 1px solid #cacaca;
-    font-size: 16px;
-    text-align: center;
-    min-height: 100px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    border-radius: 8px;
-    background-color: #FFF;
-    box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.15);
-    &:not(.selected):hover
-      background-color: yellow;
-      cursor: pointer;
-    &.selected
-      background-color: orange;
+.intro-comunidades
+  padding: 0
+  height: 700px
+  background-image: unquote("url('lib/frontend/site/home-multiforum/background-comunidades-activas.jpg')")
+  background-size: cover
+  @media (max-width: 768px)
+    height: 580px
+  .container-fluid
+    height: 100%
+    background-image: linear-gradient(to right, rgba(18, 153, 89, 0.7) 2%, rgba(18, 153, 89, 0.7) 5%, rgba(17, 149, 93, 0.7) 19%, rgba(15, 140, 108, 0.7) 35%, rgba(12, 125, 132, 0.7) 53%, rgba(8, 103, 165, 0.7) 71%, rgba(3, 76, 207, 0.7) 90%, rgba(0, 60, 233, 0.7));
+    display: flex
+    align-items: center
+  h2 
+    font-family 'Dosis', sans-serif
+    text-transform: uppercase
+    font-size: 40px
+    color: $secondary-color;
+  p
+    font-size: 24px
+    color: white
+    line-height: 1.2
+    margin-top: 10px
+.comunidades-carousel
+  padding: 0 20px;
+.comunidad-col 
+  display: flex
+  justify-content: center
+.comunidad-carousel-item
+  text-align: center
+  cursor: pointer
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h4
+    font-family 'Dosis', sans-serif
+    text-transform: uppercase
+    line-height: 1.2;
+    font-size: 25px
+    text-align: center
+    flex: 1 0 auto;
+  .icon-wrapper
+    width: 140px;
+    height: 140px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.32);
+    background-color: #f4f4ef;
+    border-radius:100%
+    display: inline-block
+    overflow: hidden
+    img
+      max-width: 100%;
+  &.selected
+      .icon-wrapper
+        border: solid 4px #707070;
+.flickity-resize
+  .comunidad-col
+    height: calc(100% - 40px)
