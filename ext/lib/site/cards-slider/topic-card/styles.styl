@@ -1,6 +1,9 @@
   .panel.panel-default
     .panel-heading
       min-height:160px
+    &.panel-with-comunidad
+      .action-topic
+        top: 60px
   .panel-comunidad
     color: #707070
     padding: 10px;
@@ -62,16 +65,38 @@
     @media screen and (min-width: 750px)
       width: 28%
       margin: 20px 40px
-
+    .action-topic
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      .icon-wrapper
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.32);
+        background-color: #f4f4ef;
+        width: 42px
+        height: 42px
+        border-radius: 100%
+        display: inline-flex;
+        justify-content: center;
+        img 
+          max-width: 24px
+      span
+        display: inline-block
+        margin-top: 10px
+        border-radius: 18px;
+        background-image: linear-gradient(to right, #ffab5e 0%, #ffe900);
+        color: #000000
+        text-transform: uppercase
+        font-family: 'Dosis', sans-serif
+        font-size: 12px
+        line-height: 15px
+        width: 60px
+        height: 15px
+        text-align:center
+        font-weight: bold
     .panel-body
-      .action-topic
-        color: $main-color;
-        font-size: 0.85rem;
-        img
-          width: 18px;
-          display: inline-block;
-          vertical-align: top;
-          margin-right: 4px;
       h3
         font-size:1rem
         font-weight: 500;
