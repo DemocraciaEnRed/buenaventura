@@ -28,7 +28,8 @@ button.flickity-prev-next-button.next
 
 .flickity-resize 
   .topic-card
-    height: calc(100% - 55px);
+    @media (min-width: 600px)
+      min-height: calc(100% - 55px);
   .flickity-viewport
     padding: 20px 0;
     box-sizing: content-box;
