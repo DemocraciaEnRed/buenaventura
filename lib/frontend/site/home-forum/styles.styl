@@ -5,11 +5,25 @@
     text-transform: uppercase
     font-family: 'Dosis', sans-serif
     .jumbotron_body
-      background-image: linear-gradient(to right, #ffab5e 0%, #ffe900 100%);
+      background-image: linear-gradient(to right, #ffab5e 45%, #ffe90069 100%);
       min-height: 240px;
       .container
-        width: 83%;
-        max-width: unset;
+        @media (min-width:576px) {
+            width: 540px;
+            max-width: 100%;
+        }
+        @media (min-width:768px) {
+            width: 720px;
+            max-width: 100%;
+        }
+        @media (min-width:992px) {
+            width: 960px;
+            max-width: 100%;
+        }
+        @media (min-width:1200px) {
+            width: 1140px;
+            max-width: 100%;
+        }
         a.pre-link
           font-size: 22px
           color: #000
