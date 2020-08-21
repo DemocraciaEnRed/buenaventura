@@ -9,6 +9,8 @@ border_radius = 3px
   .alert
     margin 20px 0 10px
   .vote-options
+    display: flex;
+    flex-direction: column
     .proxy-vote
       display inline-block
     .vote-option
@@ -74,9 +76,32 @@ border_radius = 3px
   .vote-box, .results-box
     background white
     padding 20px 0
+    .vote-title
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      cursor: default;
+      p
+        line-height: 1.2
+        font-size: 16px
+    .icon-wrapper
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.32);
+      background-color: #f4f4ef;
+      width: 110px
+      height: 110px
+      border-radius: 100%
+      display: inline-flex;
+      justify-content: center;
+      margin-right: 20px;
+      img 
+        max-width: 60px
     h5
       text-transform uppercase
       margin-top 0
+      color: $main-link-color
+      font-family: 'Dosis', sans-serif
+      display: inline-block
+      font-size: 18px
     .delegation-box
       display inline-block
   .vote-box
