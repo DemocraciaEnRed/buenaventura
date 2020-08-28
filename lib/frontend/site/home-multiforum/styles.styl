@@ -31,7 +31,6 @@
   background: transparent
 
   .lead-paragraph
-    margin-top: 45px
     text-align: center
     font-size: 20px
     padding-left: 10%;
@@ -44,7 +43,7 @@
     h3
       font-size: 40px
       font-family 'Dosis', sans-serif
-      margin: 25px 0
+      margin: 20px 0 0
       padding: 0
 
   .intro-plataforma
@@ -95,7 +94,7 @@
         color: #000000
         text-transform: uppercase
         font-family: 'Dosis', sans-serif
-        font-size: 26px
+        font-size: 22px
         line-height: 35px
         height: 35px
     .media
@@ -278,12 +277,13 @@
   height: 50px
 
 .consultas
-  background-image: unquote("url('lib/frontend/site/home-multiforum/background-propuestas-recientes.png')")
+  background-color: #f3f5fd;
+  /* background-image: unquote("url('lib/frontend/site/home-multiforum/background-propuestas-recientes.png')")
   background-repeat: no-repeat
   background-size: 250px;
   background-position: center 90px;
   @media (max-width: 600px)
-    background-position: center 180px;
+    background-position: center 180px; */
   .text-primary
       font-family 'Dosis', sans-serif
       font-size: 40px
@@ -302,11 +302,13 @@
     box-shadow: 5px 7px 5px 0 rgba(0, 0, 0, 0.24);
     border: solid 3px #f4f4ef;
     &.selected
-      border: solid 3px #707070;
+      border: solid 3px $secondary-color;
     &:active
       box-shadow: 5px 7px 5px 0 rgba(0, 0, 0, 0.24);
     &:focus
       outline: none
+    &:hover
+      color: $main-color;
   .topics-container
     padding: 0 25px;
 
