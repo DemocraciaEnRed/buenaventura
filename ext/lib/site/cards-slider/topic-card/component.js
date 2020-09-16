@@ -26,25 +26,27 @@ export default ({ topic }) => {
         </div>
       }
     <div className='topic-card-wrapper'>
-      { topic.closingAt &&
-        <p className='meta-information'>
-          <i className='icon-clock' />
-          <span className='time-ago-label'>
-            {(topic.closed ? t('common.closed') : t('common.close')) + ' '}
-          </span>
-          <Timeago className='meta-timeago' date={topic.closingAt} />
-        </p>
-      }
       <div className='panel-body'>
         <h3>{topic.mediaTitle}</h3>
       </div>
       <div className='topic-card-footer'>
-        <p className='text-muted'>
-          {topic.action.method === "" ?
-          `${topic.commentersCount} ${topic.commentersCount === 1 ? t('proposal-article.participant.singular') : t('proposal-article.participant.plural')}` :
-          `${topic.action.count} ${topic.action.count === 1 ? t('proposal-article.participant.singular') : t('proposal-article.participant.plural')}`
+        <div className='left-wrapper'>
+          <p className='text-muted'>
+            {topic.action.method === "" ?
+            `${topic.commentersCount} ${topic.commentersCount === 1 ? t('proposal-article.participant.singular') : t('proposal-article.participant.plural')}` :
+            `${topic.action.count} ${topic.action.count === 1 ? t('proposal-article.participant.singular') : t('proposal-article.participant.plural')}`
+            }
+          </p>
+          { topic.closingAt &&
+            <p className='meta-information'>
+              <i className='icon-clock' />
+              <span className='time-ago-label'>
+                {(topic.closed ? t('common.closed') : t('common.close')) + ' '}
+              </span>
+              <Timeago className='meta-timeago' date={topic.closingAt} />
+            </p>
           }
-        </p>
+        </div>
         <div className='social-links'>
           <Social topic={topic}/>
         </div> 
