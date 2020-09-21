@@ -40,14 +40,14 @@
       @media (min-width: 576px)
         right -70px
 .comunidad-col 
-  display: flex
-  justify-content: center
 .comunidad-carousel-item
   text-align: center
   cursor: pointer
-  display: flex;
-  flex-direction: column;
+  display: block;
+  // flex-direction: column;
   align-items: center;
+  margin: 0 10px;
+  padding: 10px 0;
   h4
     font-family 'Dosis', sans-serif
     text-transform: uppercase
@@ -57,17 +57,22 @@
     flex: 1 0 auto;
     color: $main-color;
   .icon-wrapper
-    width: 140px;
-    height: 140px;
+    height: 100px;
     background-color: #f9f9f9;
-    border-radius:100%
+    // border-radius:100%
     display: inline-block
-    overflow: hidden
+    // overflow: hidden
     img
-      max-width: 100%;
+      padding: 3px;
+      width: 100px;
+      height:100px;
+      box-sizing: border-box;
+      border-radius: 100px;
   &.selected
-      .icon-wrapper
-        border: solid 4px $secondary-color;
+    .icon-wrapper
+      border-radius: 100px;
+      border: solid 4px $secondary-color;
+      margin: -4px;
 .flickity-resize
   .comunidad-col
-    height: calc(100% - 40px)
+    // height: calc(100% - 40px)
