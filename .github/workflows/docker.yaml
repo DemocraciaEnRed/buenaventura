@@ -1,0 +1,20 @@
+name: Build and push
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  work:
+    name: Work
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+      - name: Build & Push docker image
+        uses: mr-smithers-excellent/docker-build-push@v4
+        with:
+          image: democraciaenred/buenaventura
+          registry: ghcr.io
+          username: ${{ secrets.REGISTRY_USER }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
