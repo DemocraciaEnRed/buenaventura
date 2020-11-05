@@ -169,7 +169,7 @@ export default class EditForum extends Component {
               <div className='form-group clearfix contentType'>
                 <select value={contentType} onChange={this.handleChangeExtra('contentType')} placeholder="Elija una opcion">
                   <option value="" disabled>- Elija una opción -</option>
-                  <option value="ejes">Ejes de consulta</option>
+                  <option value="ejes">Ejes de la comunidad</option>
                   <option value="propuestas">Propuestas</option>
                   <option value="llamado">Convocatoria</option>
                 </select>

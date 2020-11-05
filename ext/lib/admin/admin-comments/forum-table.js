@@ -121,12 +121,12 @@ export default class ForumTable extends Component {
     let { forum, topics, admins, comments } = this.props
     return (
       <div className="general-stats-container">
-        <h4 className="forum-subtitle">Consulta</h4>
+        <h4 className="forum-subtitle">Comunidad</h4>
         <h1 className="forum-title">{forum.title}</h1>
         <table className="table">
           <thead>
             <tr>
-              <th colSpan="2" className="bg-primary">Estadisticas generales de la consulta en general</th>
+              <th colSpan="2" className="bg-primary">Estadisticas generales de la comunidad en general</th>
             </tr>
           </thead>
           <tbody>
