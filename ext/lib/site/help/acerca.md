@@ -19,7 +19,7 @@ Fundación Carvajal Sede - Ubuntu
 Buenaventura, Colombia.
 
 
-[activa.buenaventura@fundacioncarvajal.org.co](mailto:activa.buenaventura@fundacioncarvajal.org.co)
+[extitutopa@gmail.com](mailto:extitutopa@gmail.com)
 ​
 ## Tecnología
 
